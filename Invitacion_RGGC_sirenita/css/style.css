@@ -1,0 +1,193 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+html, body {
+    font-family: "Dancing Script", cursive !important;
+    background-image: url('bg.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: repeat;
+    position: relative; /* Permite que los elementos hijos se posicionen con respecto al body */
+    z-index: -1;
+}
+
+#home {
+    background-image: url("Home.png");
+    background-size: 100% 100%; /* Asegura que la imagen cubra toda la pantalla sin distorsionarse */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+}
+
+
+.navbar {
+    background-color:#93cac4;
+}
+
+
+.nav-link {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+}
+
+#header {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+    color: #357566 !important;
+}
+
+
+.leyenda {
+    background-color: #93cac4 !important;
+}
+
+
+#leyend {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+
+}
+
+
+#maps {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+    color: #357566 !important;
+}
+
+
+.map-icon {
+    font-size:5rem;
+}
+
+
+#itinerario {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+    color: #357566 !important;
+    font-size:1.25rem;
+}
+
+
+.it-icon{
+    font-size:2rem !important;
+}
+
+
+/* Estilos generales */
+#album {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 70vh; /* Ocupa el 70% de la altura de la pantalla */
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que toda la imagen se vea sin recortes */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .carousel-inner {
+        height: 50vh; /* Ajusta la altura al 50% de la pantalla en móviles */
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Mantiene la imagen completa visible */
+    }
+
+    #album {
+        padding: 0;
+    }
+
+    body, html {
+        overflow-x: hidden; /* Elimina cualquier desplazamiento horizontal */
+    }
+}
+
+
+/* Estilos generales */
+#mesa-de-regalos {
+    text-align: center; /* Centra el contenido */
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.mesa-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap; /* Asegura que no se pasen a la siguiente línea */
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+.mesa-item {
+    flex: 0 1 auto; /* Ajusta el tamaño de los elementos de acuerdo al contenido */
+    margin: 10px; /* Espacio entre los elementos */
+}
+
+.mesa-link {
+    display: block;
+}
+
+.mesa-image {
+    width: 80px; /* Define el ancho de cada imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius:3px;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .mesa-container {
+        justify-content: space-between; /* Asegura que se mantengan en una línea sin desbordar */
+    }
+
+    .mesa-image {
+        width: 60px; /* Reduce un poco el tamaño en pantallas muy pequeñas */
+    }
+
+    body, html {
+        overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+    }
+}
+
+
+
+
+#cierre {
+    margin: 40px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto */
+    background-color: #93cac4; /* Color de fondo beige */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+    #cierre h2 {
+        font-size: 24px; /* Tamaño del título */
+        margin-bottom: 10px; /* Espacio debajo del título */
+    }
+
+    #cierre p {
+        margin: 5px 0; /* Espaciado entre párrafos */
+    }
